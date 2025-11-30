@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Enhanced Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="light-theme">
+
+<button id="themeToggle">Switch to Dark Theme</button>
+
+<div id="formArea">
+    <h2>Registration Form</h2>
+
+    <div class="field">
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Ben White">
+        <div class="error" id="nameError"></div>
+    </div>
+
+    <div class="field">
+        <label for="email">Email</label>
+        <input type="text" id="email" placeholder="benwhite@gmail.com">
+        <div class="error" id="emailError"></div>
+    </div>
+
+    <div class="field">
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="At least one uppercase & one number">
+        <span class="show-pass" id="togglePass">Show</span>
+        <div id="strengthBar"><div id="strengthFill"></div></div>
+        <div class="error" id="passwordError"></div>
+    </div>
+
+    <button id="sendBtn">Register</button>
+</div>
+
+<div id="done">Registration Successful!</div>
+
+<script src="script.js"></script>
+</body>
+</html>
